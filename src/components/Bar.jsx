@@ -9,6 +9,7 @@ export default function Bar(props) {
           style={{
             height: `${props.height * 1.5}%`,
             backgroundColor: props.backgroundColor,
+            maxHeight: props.maxHeight,
           }}
         ></div>
       </div>

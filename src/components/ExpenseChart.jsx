@@ -8,10 +8,15 @@ export default function ExpenseChart() {
   //   (previousValue, currentValue) => previousValue + currentValue.amount,
   //   initialValue
   // );
+  const amounts = data.map(expenseInfo => expenseInfo.amount);
 
-  const maxValue = data.reduce((prev, current) =>
-    prev.amount > current.amount ? prev : current
-  );
+  const maxValue = Math.max(...amounts);
+
+  // const maxValue = amounts.sort()[amounts.length - 1];
+  console.log(maxValue);
+  // const maxValue = data.reduce((prev, current) =>
+  //   prev.amount > current.amount ? prev : current
+  // );
 
   return (
     <div className='bg-very-pale-orange rounded-xl p-4 font-manrope text-dark-brown'>
@@ -24,10 +29,11 @@ export default function ExpenseChart() {
               day={balanceInfo.day}
               key={balanceInfo.day}
               backgroundColor={
-                balanceInfo.amount === maxValue.amount
+                balanceInfo.amount === maxValue
                   ? 'hsl(186, 34%, 60%)'
                   : 'hsl(10, 79%, 65%)'
               }
+              // maxHeight={'100%'}
             />
           ))}
         </div>
