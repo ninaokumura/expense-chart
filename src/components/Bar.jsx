@@ -3,11 +3,12 @@ import React from 'react';
 export default function Bar(props) {
   return (
     <div>
-      <div className='h-24 flex items-end'>
+      <div className='h-28 flex items-end'>
         <div
           className='bg-soft-red w-8 rounded'
           style={{
-            height: props.height,
+            height: `${props.height * 1.5}%`,
+            backgroundColor: props.backgroundColor,
           }}
         ></div>
       </div>
