@@ -2,22 +2,10 @@ import React from 'react';
 import Bar from './Bar';
 import data from '../data/data.json';
 
+const weekdays = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+const currentDayIdx = new Date().getDay();
+
 export default function ExpenseChart() {
-  // const initialValue = 0;
-  // const totalExpense = data.reduce(
-  //   (previousValue, currentValue) => previousValue + currentValue.amount,
-  //   initialValue
-  // );
-  const amounts = data.map(expenseInfo => expenseInfo.amount);
-
-  const maxValue = Math.max(...amounts);
-
-  // const maxValue = amounts.sort()[amounts.length - 1];
-  console.log(maxValue);
-  // const maxValue = data.reduce((prev, current) =>
-  //   prev.amount > current.amount ? prev : current
-  // );
-
   return (
     <div className='bg-very-pale-orange rounded-xl p-4 font-manrope text-dark-brown'>
       <div className='grid gap-4'>
@@ -29,7 +17,7 @@ export default function ExpenseChart() {
               day={balanceInfo.day}
               key={balanceInfo.day}
               backgroundColor={
-                balanceInfo.amount === maxValue
+                balanceInfo.day === weekdays[currentDayIdx]
                   ? 'hsl(186, 34%, 60%)'
                   : 'hsl(10, 79%, 65%)'
               }
