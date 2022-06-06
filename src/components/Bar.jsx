@@ -5,7 +5,7 @@ export default function Bar(props) {
     <div>
       <div className='h-28 flex flex-col justify-end'>
         <div
-          className='relative border flex items-end group'
+          className='relative flex items-end group'
           style={{
             height: `${props.amount * 1.5}%`,
           }}

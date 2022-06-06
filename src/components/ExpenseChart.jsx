@@ -24,7 +24,7 @@ export default function ExpenseChart() {
             />
           ))}
         </div>
-        <hr className='text-medium-brown' />
+        <div className='border-b border-cream' aria-hidden />
         <div className='flex justify-between'>
           <div>
             <div className='text-xs opacity-50'>Total this month</div>
