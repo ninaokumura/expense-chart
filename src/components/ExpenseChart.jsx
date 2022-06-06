@@ -25,7 +25,7 @@ export default function ExpenseChart() {
         <div className='flex justify-between items-end'>
           {data.map(balanceInfo => (
             <Bar
-              height={balanceInfo.amount}
+              amount={balanceInfo.amount}
               day={balanceInfo.day}
               key={balanceInfo.day}
               backgroundColor={
@@ -33,7 +33,6 @@ export default function ExpenseChart() {
                   ? 'hsl(186, 34%, 60%)'
                   : 'hsl(10, 79%, 65%)'
               }
-              // maxHeight={'100%'}
             />
           ))}
         </div>
