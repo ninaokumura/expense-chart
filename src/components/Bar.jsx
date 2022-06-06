@@ -3,9 +3,9 @@ import React from 'react';
 export default function Bar(props) {
   return (
     <div>
-      <div className='h-28 flex flex-col justify-end group'>
+      <div className='h-28 flex flex-col justify-end'>
         <div
-          className='relative border flex items-end'
+          className='relative border flex items-end group'
           style={{
             height: `${props.amount * 1.5}%`,
           }}
