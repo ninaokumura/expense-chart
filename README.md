@@ -26,13 +26,13 @@ Users should be able to:
 - **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
 ### Screenshot
+![expense-chart](https://user-images.githubusercontent.com/79299205/172157204-dfd9a044-3df0-4ecd-8fb2-cd14486649c7.jpg)
 
-![](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ninaokumura/expense-chart)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [expense-chart-solution](https://github.com/ninaokumura/expense-chart)
+- Live Site URL: [expense-chart-demo](https://your-live-site-url.com)
 
 ## My process
 
@@ -51,4 +51,4 @@ Users should be able to:
 ## Author
 
 - Website - [Nina Okumura](https:ninaokumura.me)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ninaokumura)
+- Frontend Mentor - [@ninaokumura](https://www.frontendmentor.io/profile/ninaokumura)
