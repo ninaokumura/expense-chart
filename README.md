@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [expense-chart-solution](https://github.com/ninaokumura/expense-chart)
-- Live Site URL: [expense-chart-demo](https://your-live-site-url.com)
+- Live Site URL: [expense-chart-demo](https://expense-chart-react.netlify.app/)
 
 ## My process
 
